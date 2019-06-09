@@ -83,7 +83,7 @@ namespace CloudmersiveReceiptOCR
                         int x = (int)(item.XLeft / averageWidth);
                         int y = (int)(item.YTop / averageHeight);
 
-                        dataMap[x, y] = item.Text;
+                        dataMap[x, y] = item.Text.Trim();
                     }
 
                     Debug.WriteLine(dataMap);
