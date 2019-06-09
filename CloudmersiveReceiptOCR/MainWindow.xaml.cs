@@ -69,6 +69,9 @@ namespace CloudmersiveReceiptOCR
                     // Convert a photo of a document into text
                     var result = apiInstance.ImageOcrPhotoWordsWithLocation(imageFile, language);
                     Debug.WriteLine( JsonConvert.SerializeObject( result ));
+
+                    double averageHeight = result.TextElements.Average(x => x.Height.Value);
+                    double averageWidth = result.TextElements.Average(x => x.Width.Value);
                 }
                 catch (Exception e)
                 {
