@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Run OCR" HorizontalAlignment="Left" Margin="240,163,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Button_Click"/>
-        <TextBox x:Name="txtDirectory" HorizontalAlignment="Left" Height="23" Margin="52,116,0,0" TextWrapping="Wrap" Text="C:\temp\invoices" VerticalAlignment="Top" Width="288"/>
+        <TextBox x:Name="txtDirectory" HorizontalAlignment="Left" Height="23" Margin="52,116,0,0" TextWrapping="Wrap" Text="C:\temp\invoices\redoX.png" VerticalAlignment="Top" Width="288"/>
 
     </Grid>
 </Window>

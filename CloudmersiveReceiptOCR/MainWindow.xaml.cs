@@ -40,16 +40,15 @@ namespace CloudmersiveReceiptOCR
             if (File.Exists(txtDirectory.Text))
             {
                 ProcessFile(txtDirectory.Text);
-                return;
             }
 
-            string filepath = txtDirectory.Text;
-            DirectoryInfo d = new DirectoryInfo(filepath);
+            //string filepath = txtDirectory.Text;
+            //DirectoryInfo d = new DirectoryInfo(filepath);
 
-            foreach (var file in d.GetFiles("*"))
-            {
-                ProcessFile(file.FullName);
-            }
+            //foreach (var file in d.GetFiles("*"))
+            //{
+            //    ProcessFile(file.FullName);
+            //}
         }
 
         private void ProcessFile(string fileName)
