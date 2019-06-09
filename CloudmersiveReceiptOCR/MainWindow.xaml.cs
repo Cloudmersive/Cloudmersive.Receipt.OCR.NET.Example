@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using System.Windows.Shapes;
 using Cloudmersive.APIClient.NET.OCR.Api;
 using Cloudmersive.APIClient.NET.OCR.Client;
 using Cloudmersive.APIClient.NET.OCR.Model;
+using Newtonsoft.Json;
 
 namespace CloudmersiveReceiptOCR
 {
@@ -34,7 +36,13 @@ namespace CloudmersiveReceiptOCR
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string filepath = Environment.GetFolderPath(txtDirectory.Text);
+            DirectoryInfo d = new DirectoryInfo(filepath);
 
+            foreach (var file in d.GetFiles("*"))
+            {
+                ProcessFile(file.FullName);
+            }
         }
 
         private void ProcessFile(string fileName)
@@ -54,7 +62,7 @@ namespace CloudmersiveReceiptOCR
                 {
                     // Convert a photo of a document into text
                     ImageToTextResponse result = apiInstance.ImageOcrPhotoToText(imageFile, language);
-                    Debug.WriteLine(result);
+                    Debug.WriteLine( JsonConvert.SerializeObject( result ));
                 }
                 catch (Exception e)
                 {
