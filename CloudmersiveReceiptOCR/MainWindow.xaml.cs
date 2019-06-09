@@ -30,6 +30,7 @@ namespace CloudmersiveReceiptOCR
         {
             // Configure API key authorization: Apikey
             Configuration.Default.AddApiKey("Apikey", "402380c4-b4f1-47bc-b5aa-cb76c73c1ed8");
+            Configuration.Default.Timeout = 10000000;
 
             InitializeComponent();
         }
