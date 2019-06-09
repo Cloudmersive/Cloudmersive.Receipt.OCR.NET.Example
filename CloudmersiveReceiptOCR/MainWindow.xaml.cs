@@ -36,7 +36,7 @@ namespace CloudmersiveReceiptOCR
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string filepath = Environment.GetFolderPath(txtDirectory.Text);
+            string filepath = txtDirectory.Text;
             DirectoryInfo d = new DirectoryInfo(filepath);
 
             foreach (var file in d.GetFiles("*"))

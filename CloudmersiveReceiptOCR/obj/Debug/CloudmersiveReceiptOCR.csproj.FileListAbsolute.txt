@@ -1,0 +1,5 @@
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR.csprojAssemblyReference.cache
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\MainWindow.g.cs
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\App.g.cs
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR_MarkupCompile.cache
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR_MarkupCompile.lref
