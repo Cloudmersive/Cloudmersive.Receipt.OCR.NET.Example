@@ -37,6 +37,12 @@ namespace CloudmersiveReceiptOCR
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (File.Exists(txtDirectory.Text))
+            {
+                ProcessFile(txtDirectory.Text);
+                return;
+            }
+
             string filepath = txtDirectory.Text;
             DirectoryInfo d = new DirectoryInfo(filepath);
 
