@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Run OCR" HorizontalAlignment="Left" Margin="240,163,0,0" VerticalAlignment="Top" Width="100" Height="35"/>
+
     </Grid>
 </Window>
