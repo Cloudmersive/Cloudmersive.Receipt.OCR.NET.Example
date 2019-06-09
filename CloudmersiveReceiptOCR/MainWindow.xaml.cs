@@ -72,6 +72,11 @@ namespace CloudmersiveReceiptOCR
 
                     double averageHeight = result.TextElements.Average(x => x.Height.Value);
                     double averageWidth = result.TextElements.Average(x => x.Width.Value);
+
+                    double rightX = result.TextElements.Max(x => x.XLeft.Value + x.Width.Value);
+                    double bottomY = result.TextElements.Max(x => x.YTop.Value + x.Height.Value);
+
+                    string[,] dataMap = new string[(int) (rightX / averageWidth),(int) (bottomY / averageHeight)];
                 }
                 catch (Exception e)
                 {
