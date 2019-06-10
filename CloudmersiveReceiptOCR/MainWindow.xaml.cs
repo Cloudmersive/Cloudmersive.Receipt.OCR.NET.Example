@@ -76,23 +76,35 @@ namespace CloudmersiveReceiptOCR
                     double rightX = result.TextElements.Max(x => x.XLeft.Value + x.Width.Value);
                     double bottomY = result.TextElements.Max(x => x.YTop.Value + x.Height.Value);
 
-                    string[,] dataMap = new string[(int) (rightX / averageWidth),(int) (bottomY / averageHeight)];
+                    string[,] dataMap = new string[(int)(bottomY / averageHeight), (int) (rightX / averageWidth)];
 
                     foreach (var item in result.TextElements)
                     {
                         int x = (int)(item.XLeft / averageWidth);
                         int y = (int)(item.YTop / averageHeight);
 
-                        dataMap[x, y] = item.Text.Trim();
+                        dataMap[y, x] = item.Text.Trim();
                     }
 
                     Debug.WriteLine(dataMap);
+
+                    File.WriteAllLines(@"C:\\Temp\\output.csv",
+                        ToCsv(dataMap));
+
                 }
                 catch (Exception e)
                 {
                     Debug.Print("Exception when calling ImageOcrApi.ImageOcrPhotoToText: " + e.Message);
                 }
             }
+        }
+
+        private static IEnumerable<String> ToCsv<T>(T[,] data, string separator = ",")
+        {
+            for (int i = 0; i < data.GetLength(0); ++i)
+                yield return string.Join(separator, Enumerable
+                  .Range(0, data.GetLength(1))
+                  .Select(j => data[i, j])); // simplest, we don't expect ',' and '"' in the items
         }
     }
 }

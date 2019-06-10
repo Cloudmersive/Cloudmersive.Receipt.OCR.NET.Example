@@ -21,3 +21,4 @@ C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.
 C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR.csproj.CopyComplete
 C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR.exe
 C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\obj\Debug\CloudmersiveReceiptOCR.pdb
+C:\Users\braga\OneDrive\Old Junk\Documents2\GitHub\Cloudmersive.Receipt.OCR.NET.Example\CloudmersiveReceiptOCR\bin\Debug\Cloudmersive.APIClient.NET.DocumentAndDataConvert.dll
